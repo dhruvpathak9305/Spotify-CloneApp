@@ -1,3 +1,17 @@
+body::-webkit-scrollbar{
+  display:none
+}
+
+
+/* Above code tried to hide the scroll in mozilla but not worked , so tried this. */
+@-moz-document url-prefix() {
+  html,body{overflow: hidden !important;}
+}
+*{
+  margin:0;
+  padding:0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
